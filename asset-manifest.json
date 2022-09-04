@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/news-site-template/static/css/main.1e9d7810.css",
+    "main.js": "/news-site-template/static/js/main.1fb0b237.js",
+    "static/js/27.e80a1e18.chunk.js": "/news-site-template/static/js/27.e80a1e18.chunk.js",
+    "static/media/mies_laavulla.jpg": "/news-site-template/static/media/mies_laavulla.3e0ea397a6f8ef8342e2.jpg",
+    "static/media/trump.jpg": "/news-site-template/static/media/trump.079b3e564006222961c8.jpg",
+    "static/media/nuoret.jpg": "/news-site-template/static/media/nuoret.2e09e24eb15b46178126.jpg",
+    "static/media/karpanen.jpg": "/news-site-template/static/media/karpanen.cc0603b5b794f3839d63.jpg",
+    "static/media/eerikainen.jpg": "/news-site-template/static/media/eerikainen.25db5cfbd58ad9ad9c20.jpg",
+    "static/media/latvala.jpg": "/news-site-template/static/media/latvala.e35466b1ae3d5d90545d.jpg",
+    "static/media/lukasenka.jpg": "/news-site-template/static/media/lukasenka.607134a8ec8a9ccdd111.jpg",
+    "static/media/marin.jpg": "/news-site-template/static/media/marin.89d65357ee55ee01ab33.jpg",
+    "static/media/2.jpeg": "/news-site-template/static/media/2.025cfdf69c31932cd5fd.jpeg",
+    "static/media/hatonen.jpg": "/news-site-template/static/media/hatonen.0914b3f916f9615e79af.jpg",
+    "static/media/natalia.jpg": "/news-site-template/static/media/natalia.ba96e0b0c2dab2fae377.jpg",
+    "static/media/1.jpeg": "/news-site-template/static/media/1.ee2ad0c32a9a90f673f9.jpeg",
+    "static/media/jussi.jpg": "/news-site-template/static/media/jussi.eaf316eb1ce15b407238.jpg",
+    "static/media/raakel.jpg": "/news-site-template/static/media/raakel.1fda4b39711ada72e28c.jpg",
+    "static/media/marko.jpg": "/news-site-template/static/media/marko.0d2d2609a80a859f82cb.jpg",
+    "static/media/2.webp": "/news-site-template/static/media/2.49fcb8c407c042e0759a.webp",
+    "static/media/1.webp": "/news-site-template/static/media/1.5d3a99ab056a98b89da4.webp",
+    "static/media/3.webp": "/news-site-template/static/media/3.bc7b5f289fb2510b6ef6.webp",
+    "static/media/6.webp": "/news-site-template/static/media/6.7ab38bc446f31bd01339.webp",
+    "static/media/5.webp": "/news-site-template/static/media/5.45f74d493fe55f02505d.webp",
+    "static/media/4.webp": "/news-site-template/static/media/4.9d57b4a10735e6fc016e.webp",
+    "index.html": "/news-site-template/index.html"
+  },
+  "entrypoints": [
+    "static/css/main.1e9d7810.css",
+    "static/js/main.1fb0b237.js"
+  ]
+}
