@@ -1,0 +1,30 @@
+[
+  {
+    "writer-id": 1,
+    "first-name": "Marko",
+    "last-name": "Tossavainen",
+    "email": "marko.tossavainen@uutiset.fi",
+    "image": "marko.jpg"
+  },
+  {
+    "writer-id": 2,
+    "first-name": "Jussi",
+    "last-name": "Vaahtovaara",
+    "email": "jussi.vaahtovaara@uutiset.fi",
+    "image": "jussi.jpg"
+  },
+  {
+    "writer-id": 3,
+    "first-name": "Natalia",
+    "last-name": "Neuman",
+    "email": "natalia.neuman@uutiset.fi",
+    "image": "natalia.jpg"
+  },
+  {
+    "writer-id": 4,
+    "first-name": "Raakel",
+    "last-name": "Lehikoinen",
+    "email": "raakel.lehikoinen@uutiset.fi",
+    "image": "raakel.jpg"
+  }
+]
