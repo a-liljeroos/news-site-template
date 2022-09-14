@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/news-site-template/static/css/main.dfad6524.css",
-    "main.js": "/news-site-template/static/js/main.7fbe57ee.js",
+    "main.css": "/news-site-template/static/css/main.9c23df12.css",
+    "main.js": "/news-site-template/static/js/main.5beb026a.js",
     "static/js/27.e80a1e18.chunk.js": "/news-site-template/static/js/27.e80a1e18.chunk.js",
     "static/media/mies_laavulla.jpg": "/news-site-template/static/media/mies_laavulla.3e0ea397a6f8ef8342e2.jpg",
     "static/media/trump.jpg": "/news-site-template/static/media/trump.079b3e564006222961c8.jpg",
@@ -27,7 +27,7 @@
     "index.html": "/news-site-template/index.html"
   },
   "entrypoints": [
-    "static/css/main.dfad6524.css",
-    "static/js/main.7fbe57ee.js"
+    "static/css/main.9c23df12.css",
+    "static/js/main.5beb026a.js"
   ]
 }
