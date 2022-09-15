@@ -24,7 +24,7 @@ const FrontpageArticleBrowser = () => {
   };
 
   shuffleArticles(allArticles);
-
+  window.scrollTo(0, 0);
   return (
     <div className="article-browser">
       {allArticles

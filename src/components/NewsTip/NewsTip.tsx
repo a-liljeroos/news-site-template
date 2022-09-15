@@ -1,12 +1,31 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import "./NewsTip.scss";
 import { BsCameraFill } from "react-icons/bs";
 import Sivuovi from "../Ads/Sivuovi/Sivuovi";
+import FormSubmitted from "../FormSubmitted/FormSubmitted";
+import { Formik, Form, Field, FormikHelpers } from "formik";
+import { useState } from "react";
+
+interface Values {
+  tip: string;
+  name: string;
+  email: string;
+  phone: string;
+  file: string;
+}
+
 const NewsTip = () => {
   window.scrollTo(0, 0);
+  let navigate = useNavigate();
+  const [showFormSubmitted, setShowFormSubmitted] = useState(false);
+
   return (
     <>
+      {showFormSubmitted ? (
+        <FormSubmitted message="Kiitos juttuvinkistä!" countDownSeconds={4} />
+      ) : null}
+
       <div className="newstip-container">
         <div className="newstip-cameraicon">
           {" "}
@@ -38,49 +57,75 @@ const NewsTip = () => {
           </li>
           <li>Lähetä vihjeesi alla olevalla lomakkeella</li>
         </ul>
-        <form className="newstip-form">
-          <label className="newstip-form-label">* Kerro uutisvihje</label>
-          <textarea name="" id="" cols={30} rows={10} />
-          <div className="input-group1">
-            <label className="newstip-form-label">Yhteystiedot</label>
-            <p>
-              Täytähän yhteystiedot, jos haluat, että vastaamme viestiisi.
-              Käsittelemme yhteystiedot luottamuksellisesti.
-            </p>
-          </div>
-          <div className="input-group1">
-            <label className="newstip-form-label"> Nimi</label>
-            <br />
-            <input type="text" />
-          </div>
-          <div className="input-group1">
-            <label className="newstip-form-label"> Sähköpostiosoite</label>
-            <br />
-            <input type="email" />
-          </div>
-          <div className="input-group1">
-            <label className="newstip-form-label"> Puhelinnumero</label>
-            <br />
-            <input type="number" />
-          </div>
-          <div className="input-group1">
-            <label className="newstip-form-label">
-              Asiaan liittyvät kuvat tai videot: (Liitteiden yhteiskoko max. 50
-              MB)
-            </label>
-            <br />
-            <div className="file-upload-container">
-              <label className="file-upload-label">
-                <input type="file" />
-                Lataa liite
-              </label>
+        <Formik
+          initialValues={{
+            tip: "",
+            name: "",
+            email: "",
+            phone: "",
+            file: "",
+          }}
+          onSubmit={(
+            values: Values,
+            { setSubmitting }: FormikHelpers<Values>
+          ) => {
+            console.log(JSON.stringify(values, null, 2));
+            setShowFormSubmitted(true);
+            var x = setInterval(() => {
+              setShowFormSubmitted(false);
+              navigate("/news-site-template");
+              clearInterval(x);
+            }, 4000);
+          }}
+        >
+          <Form>
+            <div className="newstip-form">
+              <label className="newstip-form-label">* Kerro uutisvihje</label>
+              <Field as={"textarea"} name="tip" required />
+              <div className="input-group1">
+                <label className="newstip-form-label">Yhteystiedot</label>
+                <p>
+                  Täytähän yhteystiedot, jos haluat, että vastaamme viestiisi.
+                  Käsittelemme yhteystiedot luottamuksellisesti.
+                </p>
+              </div>
+              <div className="input-group1">
+                <label className="newstip-form-label"> Nimi</label>
+                <br />
+                <Field name="name" type="text" />
+              </div>
+              <div className="input-group1">
+                <label className="newstip-form-label"> Sähköpostiosoite</label>
+                <br />
+                <Field name="email" type="email" />
+              </div>
+              <div className="input-group1">
+                <label className="newstip-form-label"> Puhelinnumero</label>
+                <br />
+                <Field name="phone" type="number" />
+              </div>
+              <div className="input-group1">
+                <label className="newstip-form-label">
+                  Asiaan liittyvät kuvat tai videot: (Liitteiden yhteiskoko max.
+                  50 MB)
+                </label>
+                <br />
+                <div className="file-upload-container">
+                  <label className="file-upload-label">
+                    <Field name="file" type="file" />
+                    Lataa liite
+                  </label>
+                </div>
+              </div>
+              <div className="button-group">
+                <button>PERUUTA</button>
+                <button className="btn-red" type="submit">
+                  LÄHETÄ
+                </button>
+              </div>
             </div>
-          </div>
-          <div className="button-group">
-            <button>PERUUTA</button>
-            <button className="btn-red">LÄHETÄ</button>
-          </div>
-        </form>
+          </Form>
+        </Formik>
       </div>
       <Sivuovi />
     </>

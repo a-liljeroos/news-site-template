@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   const scrollUp = () => {
-    console.log("here");
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
