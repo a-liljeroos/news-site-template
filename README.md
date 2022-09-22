@@ -1,4 +1,5 @@
 <h1>Uutissivusto news site template</h1>
+<a target="_blank" rel="noreferrer"  href="https://a-liljeroos.github.io/news-site-template/" >Katso sivua</a>
 <h3>Typescript, HTML, CSS, react-icons, react-router-dom</h3>
 <h4>Sisältää</h4>
 <ul>
